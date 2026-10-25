@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2609.28682"><img src="https://img.shields.io/badge/📄%20Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"></a>
-  <a href="https://huggingface.co/zml5418"><img src="https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-yellow?logo=huggingface&logoColor=black" alt="Model Weights"></a>
-  <a href="https://huggingface.co/datasets/zml5418/thinking-leakage-rollouts"><img src="https://img.shields.io/badge/🤗%20Rollouts-HuggingFace-yellow?logo=huggingface&logoColor=black" alt="Rollouts"></a>
+  <a href="https://huggingface.co/zml5418"><img src="https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-yellow" alt="Model Weights"></a>
+  <a href="https://huggingface.co/datasets/zml5418/thinking-leakage-rollouts"><img src="https://img.shields.io/badge/🤗%20Rollouts-HuggingFace-yellow" alt="Rollouts"></a>
 </p>
 
 Hybrid reasoning models (Qwen3, MiniCPM4.1) can answer with thinking on (Think) or off (NoThink).
