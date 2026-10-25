@@ -13,7 +13,9 @@ We post-train them in NoThink mode and find that the gain comes with *thinking l
 NoThink hidden states drift along the base model's Think-vs-NoThink axis `v_leak`. This repository
 measures that drift for any checkpoint and steers along `v_leak` to test it causally.
 
-Post-training code is not included; everything here starts from model weights.
+Post-training code is not included; everything here starts from model weights. The checkpoints
+were trained with existing open-source code: GRPO and SFT with [verl](https://github.com/volcengine/verl),
+OPSD and OPSD-LoRA with [OPSD](https://github.com/siyan-zhao/OPSD).
 
 ## Released artifacts
 
@@ -109,6 +111,13 @@ directions at further layers.
 `pred` is the content of the last complete `\boxed{}` in the response; it is correct if it equals
 the reference answer or [Math-Verify](https://github.com/huggingface/Math-Verify) finds the two
 equivalent, both parsed as LaTeX.
+
+## Steering
+
+Steered and counter-steered generation (`scripts/06_steer.py`) uses
+[EasySteer](https://github.com/ZJU-REAL/EasySteer), which adds the steering vector to the residual
+stream inside vLLM (`h <- h + frac * v_leak` at layer 20), so steered runs keep continuous batching
+and the same chunked generation as unsteered ones. It runs in its own container (`env/README.md`).
 
 ## Citation
 
