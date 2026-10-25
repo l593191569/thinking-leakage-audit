@@ -1,0 +1,22 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/vllm:25.12.post1-py3
+
+# Analysis container: generation (vLLM), re-forward passes (transformers), scoring, directions.
+# Ships vLLM 0.12, torch 2.10, transformers 4.57; adds what the pipeline needs on top.
+#   apptainer build --fakeroot analysis.sif env/analysis.def
+#   apptainer exec --nv --bind <repo>:/app --env PYTHONPATH=/app analysis.sif python /app/scripts/01_generate.py ...
+
+%post
+    pip install --no-cache-dir -r /dev/stdin <<'REQ'
+math-verify==0.8.0
+latex2sympy2_extended==1.10.2
+h5py==3.16.0
+peft==0.18.0
+pyyaml
+gguf==0.17.1
+matplotlib
+REQ
+
+%environment
+    export PYTHONUNBUFFERED=1
+    export VLLM_USE_V1=1

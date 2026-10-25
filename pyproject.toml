@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinking-leakage"
+version = "1.0.0"
+description = "Code for 'Thinking Leakage: A Causal Audit of NoThink Post-Training in Hybrid Reasoning Models'"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = ["numpy", "pandas", "pyarrow", "h5py", "pyyaml", "matplotlib", "huggingface_hub",
+                "math-verify==0.8.0"]
+
+[tool.setuptools]
+packages = ["leakage"]

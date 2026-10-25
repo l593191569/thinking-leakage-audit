@@ -1,0 +1,24 @@
+# Base models. layers: the three hidden_states layers pooled and analysed (OUR convention:
+# hidden_states[L] = output of decoder block L-1); layer 20 carries v_leak and every intervention.
+models:
+  Qwen3-8B:
+    hf: Qwen/Qwen3-8B
+    layers: [8, 20, 32]
+    max_cap: {nothink: 32768, think: 32768, steer: 32768}
+  Qwen3-4B:
+    hf: Qwen/Qwen3-4B
+    layers: [8, 20, 32]
+    max_cap: {nothink: 32768, think: 32768, steer: 32768}
+  MiniCPM4.1-8B:
+    hf: openbmb/MiniCPM4.1-8B
+    trust_remote_code: true
+    layers: [8, 20, 28]
+    # its responses run much longer; generated to the limit its 65536-token context allows
+    max_cap: {nothink: 32768, think: 63488, steer: 63488}
+
+generation:            # identical for every run
+  n_rollout: 16
+  temperature: 0.6
+  top_p: 0.95
+  chunk: 8192          # round-0 budget and per-round extension
+  loop_threshold: 0.3  # 12-gram repetition ratio; a looping rollout is not extended

@@ -1,0 +1,71 @@
+# Every post-trained checkpoint in the paper, by the name its weights are published under:
+#   https://huggingface.co/zml5418/<repo>/tree/<revision>
+# counter_steer_scale: the FRAC passed to scripts/06_steer.py for the counter-steer run
+# (= -drift/||v_leak|| at layer 20, i.e. remove the checkpoint's own drift; gamma = 1).
+checkpoints:
+  - {name: GRPO-Qwen3-8B@step-50, model: Qwen3-8B, method: GRPO, step: 50, repo: zml5418/GRPO-Qwen3-8B, revision: step-50}
+  - {name: GRPO-Qwen3-4B@step-50, model: Qwen3-4B, method: GRPO, step: 50, repo: zml5418/GRPO-Qwen3-4B, revision: step-50}
+  - {name: GRPO-MiniCPM4.1-8B@step-50, model: MiniCPM4.1-8B, method: GRPO, step: 50, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-50}
+  - {name: GRPO-Qwen3-8B@step-100, model: Qwen3-8B, method: GRPO, step: 100, repo: zml5418/GRPO-Qwen3-8B, revision: step-100}
+  - {name: GRPO-Qwen3-4B@step-100, model: Qwen3-4B, method: GRPO, step: 100, repo: zml5418/GRPO-Qwen3-4B, revision: step-100}
+  - {name: GRPO-MiniCPM4.1-8B@step-100, model: MiniCPM4.1-8B, method: GRPO, step: 100, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-100}
+  - {name: GRPO-Qwen3-8B@step-150, model: Qwen3-8B, method: GRPO, step: 150, repo: zml5418/GRPO-Qwen3-8B, revision: step-150}
+  - {name: GRPO-Qwen3-4B@step-150, model: Qwen3-4B, method: GRPO, step: 150, repo: zml5418/GRPO-Qwen3-4B, revision: step-150}
+  - {name: GRPO-MiniCPM4.1-8B@step-150, model: MiniCPM4.1-8B, method: GRPO, step: 150, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-150}
+  - {name: GRPO-Qwen3-8B@step-200, model: Qwen3-8B, method: GRPO, step: 200, repo: zml5418/GRPO-Qwen3-8B, revision: step-200, counter_steer_scale: -0.5695}
+  - {name: GRPO-Qwen3-4B@step-200, model: Qwen3-4B, method: GRPO, step: 200, repo: zml5418/GRPO-Qwen3-4B, revision: step-200, counter_steer_scale: -0.5427}
+  - {name: GRPO-MiniCPM4.1-8B@step-200, model: MiniCPM4.1-8B, method: GRPO, step: 200, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-200, counter_steer_scale: -0.3892}
+  - {name: GRPO-Qwen3-8B@step-250, model: Qwen3-8B, method: GRPO, step: 250, repo: zml5418/GRPO-Qwen3-8B, revision: step-250}
+  - {name: GRPO-Qwen3-4B@step-250, model: Qwen3-4B, method: GRPO, step: 250, repo: zml5418/GRPO-Qwen3-4B, revision: step-250}
+  - {name: GRPO-MiniCPM4.1-8B@step-250, model: MiniCPM4.1-8B, method: GRPO, step: 250, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-250}
+  - {name: GRPO-Qwen3-8B@step-300, model: Qwen3-8B, method: GRPO, step: 300, repo: zml5418/GRPO-Qwen3-8B, revision: step-300}
+  - {name: GRPO-Qwen3-4B@step-300, model: Qwen3-4B, method: GRPO, step: 300, repo: zml5418/GRPO-Qwen3-4B, revision: step-300}
+  - {name: GRPO-MiniCPM4.1-8B@step-300, model: MiniCPM4.1-8B, method: GRPO, step: 300, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-300}
+  - {name: GRPO-Qwen3-8B@step-350, model: Qwen3-8B, method: GRPO, step: 350, repo: zml5418/GRPO-Qwen3-8B, revision: step-350}
+  - {name: GRPO-Qwen3-4B@step-350, model: Qwen3-4B, method: GRPO, step: 350, repo: zml5418/GRPO-Qwen3-4B, revision: step-350}
+  - {name: GRPO-MiniCPM4.1-8B@step-350, model: MiniCPM4.1-8B, method: GRPO, step: 350, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-350}
+  - {name: GRPO-Qwen3-8B@step-400, model: Qwen3-8B, method: GRPO, step: 400, repo: zml5418/GRPO-Qwen3-8B, revision: step-400}
+  - {name: GRPO-Qwen3-4B@step-400, model: Qwen3-4B, method: GRPO, step: 400, repo: zml5418/GRPO-Qwen3-4B, revision: step-400}
+  - {name: GRPO-MiniCPM4.1-8B@step-400, model: MiniCPM4.1-8B, method: GRPO, step: 400, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-400}
+  - {name: GRPO-Qwen3-8B@step-450, model: Qwen3-8B, method: GRPO, step: 450, repo: zml5418/GRPO-Qwen3-8B, revision: step-450}
+  - {name: GRPO-Qwen3-4B@step-450, model: Qwen3-4B, method: GRPO, step: 450, repo: zml5418/GRPO-Qwen3-4B, revision: step-450, counter_steer_scale: -0.6017}
+  - {name: GRPO-MiniCPM4.1-8B@step-450, model: MiniCPM4.1-8B, method: GRPO, step: 450, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-450}
+  - {name: GRPO-Qwen3-8B@step-500, model: Qwen3-8B, method: GRPO, step: 500, repo: zml5418/GRPO-Qwen3-8B, revision: step-500, counter_steer_scale: -0.6458}
+  - {name: GRPO-Qwen3-4B@step-500, model: Qwen3-4B, method: GRPO, step: 500, repo: zml5418/GRPO-Qwen3-4B, revision: step-500}
+  - {name: GRPO-MiniCPM4.1-8B@step-500, model: MiniCPM4.1-8B, method: GRPO, step: 500, repo: zml5418/GRPO-MiniCPM4.1-8B, revision: step-500, counter_steer_scale: -0.5243}
+  - {name: OPSD-Qwen3-8B@step-25, model: Qwen3-8B, method: OPSD, step: 25, repo: zml5418/OPSD-Qwen3-8B, revision: step-25, counter_steer_scale: -0.7637}
+  - {name: OPSD-LoRA-Qwen3-8B@step-25, model: Qwen3-8B, method: OPSD-LoRA, step: 25, repo: zml5418/OPSD-LoRA-Qwen3-8B, revision: step-25}
+  - {name: SFT-Qwen3-8B@step-25, model: Qwen3-8B, method: SFT, step: 25, repo: zml5418/SFT-Qwen3-8B, revision: step-25}
+  - {name: OPSD-Qwen3-8B@step-50, model: Qwen3-8B, method: OPSD, step: 50, repo: zml5418/OPSD-Qwen3-8B, revision: step-50}
+  - {name: OPSD-LoRA-Qwen3-8B@step-50, model: Qwen3-8B, method: OPSD-LoRA, step: 50, repo: zml5418/OPSD-LoRA-Qwen3-8B, revision: step-50}
+  - {name: SFT-Qwen3-8B@step-50, model: Qwen3-8B, method: SFT, step: 50, repo: zml5418/SFT-Qwen3-8B, revision: step-50, counter_steer_scale: -0.8999}
+  - {name: OPSD-Qwen3-8B@step-75, model: Qwen3-8B, method: OPSD, step: 75, repo: zml5418/OPSD-Qwen3-8B, revision: step-75}
+  - {name: OPSD-LoRA-Qwen3-8B@step-75, model: Qwen3-8B, method: OPSD-LoRA, step: 75, repo: zml5418/OPSD-LoRA-Qwen3-8B, revision: step-75}
+  - {name: SFT-Qwen3-8B@step-75, model: Qwen3-8B, method: SFT, step: 75, repo: zml5418/SFT-Qwen3-8B, revision: step-75}
+  - {name: OPSD-Qwen3-8B@step-100, model: Qwen3-8B, method: OPSD, step: 100, repo: zml5418/OPSD-Qwen3-8B, revision: step-100, counter_steer_scale: -0.4738}
+  - {name: OPSD-LoRA-Qwen3-8B@step-100, model: Qwen3-8B, method: OPSD-LoRA, step: 100, repo: zml5418/OPSD-LoRA-Qwen3-8B, revision: step-100}
+  - {name: SFT-Qwen3-8B@step-100, model: Qwen3-8B, method: SFT, step: 100, repo: zml5418/SFT-Qwen3-8B, revision: step-100}
+  - {name: OPSD-Qwen3-4B@step-25, model: Qwen3-4B, method: OPSD, step: 25, repo: zml5418/OPSD-Qwen3-4B, revision: step-25, counter_steer_scale: -0.2788}
+  - {name: OPSD-LoRA-Qwen3-4B@step-25, model: Qwen3-4B, method: OPSD-LoRA, step: 25, repo: zml5418/OPSD-LoRA-Qwen3-4B, revision: step-25}
+  - {name: SFT-Qwen3-4B@step-25, model: Qwen3-4B, method: SFT, step: 25, repo: zml5418/SFT-Qwen3-4B, revision: step-25}
+  - {name: OPSD-Qwen3-4B@step-50, model: Qwen3-4B, method: OPSD, step: 50, repo: zml5418/OPSD-Qwen3-4B, revision: step-50, counter_steer_scale: -0.3628}
+  - {name: OPSD-LoRA-Qwen3-4B@step-50, model: Qwen3-4B, method: OPSD-LoRA, step: 50, repo: zml5418/OPSD-LoRA-Qwen3-4B, revision: step-50}
+  - {name: SFT-Qwen3-4B@step-50, model: Qwen3-4B, method: SFT, step: 50, repo: zml5418/SFT-Qwen3-4B, revision: step-50}
+  - {name: OPSD-Qwen3-4B@step-75, model: Qwen3-4B, method: OPSD, step: 75, repo: zml5418/OPSD-Qwen3-4B, revision: step-75}
+  - {name: OPSD-LoRA-Qwen3-4B@step-75, model: Qwen3-4B, method: OPSD-LoRA, step: 75, repo: zml5418/OPSD-LoRA-Qwen3-4B, revision: step-75}
+  - {name: SFT-Qwen3-4B@step-75, model: Qwen3-4B, method: SFT, step: 75, repo: zml5418/SFT-Qwen3-4B, revision: step-75, counter_steer_scale: -0.9159}
+  - {name: OPSD-Qwen3-4B@step-100, model: Qwen3-4B, method: OPSD, step: 100, repo: zml5418/OPSD-Qwen3-4B, revision: step-100}
+  - {name: OPSD-LoRA-Qwen3-4B@step-100, model: Qwen3-4B, method: OPSD-LoRA, step: 100, repo: zml5418/OPSD-LoRA-Qwen3-4B, revision: step-100}
+  - {name: SFT-Qwen3-4B@step-100, model: Qwen3-4B, method: SFT, step: 100, repo: zml5418/SFT-Qwen3-4B, revision: step-100}
+  - {name: OPSD-MiniCPM4.1-8B@step-25, model: MiniCPM4.1-8B, method: OPSD, step: 25, repo: zml5418/OPSD-MiniCPM4.1-8B, revision: step-25}
+  - {name: OPSD-LoRA-MiniCPM4.1-8B@step-25, model: MiniCPM4.1-8B, method: OPSD-LoRA, step: 25, repo: zml5418/OPSD-LoRA-MiniCPM4.1-8B, revision: step-25}
+  - {name: SFT-MiniCPM4.1-8B@step-25, model: MiniCPM4.1-8B, method: SFT, step: 25, repo: zml5418/SFT-MiniCPM4.1-8B, revision: step-25}
+  - {name: OPSD-MiniCPM4.1-8B@step-50, model: MiniCPM4.1-8B, method: OPSD, step: 50, repo: zml5418/OPSD-MiniCPM4.1-8B, revision: step-50, counter_steer_scale: 0.14}
+  - {name: OPSD-LoRA-MiniCPM4.1-8B@step-50, model: MiniCPM4.1-8B, method: OPSD-LoRA, step: 50, repo: zml5418/OPSD-LoRA-MiniCPM4.1-8B, revision: step-50}
+  - {name: SFT-MiniCPM4.1-8B@step-50, model: MiniCPM4.1-8B, method: SFT, step: 50, repo: zml5418/SFT-MiniCPM4.1-8B, revision: step-50}
+  - {name: OPSD-MiniCPM4.1-8B@step-75, model: MiniCPM4.1-8B, method: OPSD, step: 75, repo: zml5418/OPSD-MiniCPM4.1-8B, revision: step-75}
+  - {name: OPSD-LoRA-MiniCPM4.1-8B@step-75, model: MiniCPM4.1-8B, method: OPSD-LoRA, step: 75, repo: zml5418/OPSD-LoRA-MiniCPM4.1-8B, revision: step-75, counter_steer_scale: -0.0011}
+  - {name: SFT-MiniCPM4.1-8B@step-75, model: MiniCPM4.1-8B, method: SFT, step: 75, repo: zml5418/SFT-MiniCPM4.1-8B, revision: step-75}
+  - {name: OPSD-MiniCPM4.1-8B@step-100, model: MiniCPM4.1-8B, method: OPSD, step: 100, repo: zml5418/OPSD-MiniCPM4.1-8B, revision: step-100}
+  - {name: OPSD-LoRA-MiniCPM4.1-8B@step-100, model: MiniCPM4.1-8B, method: OPSD-LoRA, step: 100, repo: zml5418/OPSD-LoRA-MiniCPM4.1-8B, revision: step-100}
+  - {name: SFT-MiniCPM4.1-8B@step-100, model: MiniCPM4.1-8B, method: SFT, step: 100, repo: zml5418/SFT-MiniCPM4.1-8B, revision: step-100, counter_steer_scale: 0.1276}
